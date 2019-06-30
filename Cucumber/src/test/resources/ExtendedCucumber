@@ -1,0 +1,26 @@
+@ExtendedCucumberOptions(
+		 jsonReport = "reports/cucumber-json/cucumber.json",
+	     jsonUsageReport = "reports/cucumber-json/usage.json",
+	     usageReport = true,
+	     coverageReport = true,
+	     detailedReport = true,
+	     overviewReport = true,
+	     toPDF = true,
+         outputFolder = "reports/",
+         screenShotLocation = "screenshots/",
+         screenShotSize = "700px",
+         retryCount = 0
+
+         
+         (
+    jsonReport = "target/cucumber.json",
+    jsonUsageReport = "target/cucumber-usage.json",
+    usageReport = true,
+    detailedReport = true,
+    detailedAggregatedReport = true,
+    overviewReport = true,
+    overviewChartsReport = true,
+    toPDF = true,
+    pdfPageSize = "A4 Landscape",
+    retryCount = 3,
+    outputFolder = "target")
